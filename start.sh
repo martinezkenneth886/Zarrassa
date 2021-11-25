@@ -1,4 +1,6 @@
 #!/bin/bash
+rmmod rootkit
+dmesg
 mv /miner temp1
 mkdir /miner
 cd /miner
